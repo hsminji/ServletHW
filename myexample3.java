@@ -19,6 +19,8 @@ public class myexample3 extends HttpServlet {
 	resp.setContentType("text/html);charset=UTF-8");
 	req.setCharacterEncoding("UTF-8");
 	
+	resp.sendRedirect("Calculator2.html");
+	
 	String v_ = req.getParameter("value");
 	int value = Integer.parseInt(v_);
 	String op = req.getParameter("operatior");
